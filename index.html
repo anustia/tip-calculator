@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>tip calculator</title>
+</head>
+<body>
+    <div class="container">
+        <img class="first_img"  src="images/logo.svg" alt="logo">
+        <div class="white_container">
+            <label class="bill_label font_700" for="bill">Bill</label><br>
+            <div class="dollar_div">
+              <img class="dollar_icon"  src="images/icon-dollar.svg" alt="icon dollar">
+              <input type="number" id="bill">
+            </div>
+            <h2 class="font_700">Select Tip %</h2>
+            <div class="button_div">
+                <button class="button font_700">5%</button>
+                <button class="button font_700">10%</button>
+                <button class="button font_700">15%</button>
+                <button class="button font_700">25%</button>
+                <button class="button font_700">50%</button>
+                <input class="button font_700 button_input" type="text" placeholder="Custom">
+            </div>
+            <label for="number" class="number_label font_700">Number of People</label>
+            <div class="icon_person_div">
+              <img class="icon_div" src="images/icon-person.svg" alt="icon person">
+              <input id="number" type="number">
+            </div>
+            <div class="last_div">
+                <div class="small_div small_div_1">
+                  <p class="small_p">Tip Amount </br><span>/ person</span></p>
+                  <h2 class="small_h2 font_700">$4.27</h2>
+                </div>
+                <div class="small_div small_div_2">
+                    <P class="small_p font_700">Total</br><span>/ person</span></P>
+                    <h2 class="small_h2 font_700">$32.79</h2>
+                </div>
+                <button class="reset_button font_700">RESET</button>
+            </div>
+        </div>
+        </div>
+
+    
+    
+</body>
+</html>
