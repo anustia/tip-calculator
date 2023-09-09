@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>tip calculator</title>
 </head>
-<body>
+<body id="body">
     <div class="container">
         <img class="first_img"  src="images/logo.svg" alt="logo">
         <div class="white_container">
             <label class="bill_label font_700" for="bill">Bill</label><br>
             <div class="dollar_div">
               <img class="dollar_icon"  src="images/icon-dollar.svg" alt="icon dollar">
-              <input type="number" id="bill">
+              <input type="number" id="bill" class="font_700" onfocus="this.value=''" min="0" max="100000" >
             </div>
             <h2 class="font_700">Select Tip %</h2>
             <div class="button_div">
@@ -26,26 +26,28 @@
                 <button class="button font_700">15%</button>
                 <button class="button font_700">25%</button>
                 <button class="button font_700">50%</button>
-                <input class="button font_700 button_input" type="text" placeholder="Custom">
+                <input class="button font_700 button_input" min="0" max="100" id="costum" type="text" placeholder="Custom"onfocus="this.value=''" >
             </div>
-            <label for="number" class="number_label font_700">Number of People</label>
+            <label for="number" class="number_label font_700" min="0" max="10000">Number of People</label>
+            <p id="zero"></p>
             <div class="icon_person_div">
               <img class="icon_div" src="images/icon-person.svg" alt="icon person">
-              <input id="number" type="number">
+              <input id="number" type="number" onfocus="this.value=''">
             </div>
             <div class="last_div">
                 <div class="small_div small_div_1">
                   <p class="small_p">Tip Amount </br><span>/ person</span></p>
-                  <h2 class="small_h2 font_700">$4.27</h2>
+                  <h2 class="small_h2 font_700" id="amount_result">$0.00</h2>
                 </div>
                 <div class="small_div small_div_2">
                     <P class="small_p font_700">Total</br><span>/ person</span></P>
-                    <h2 class="small_h2 font_700">$32.79</h2>
+                    <h2 class="small_h2 font_700" id="total_result">$0.00</h2>
                 </div>
-                <button class="reset_button font_700">RESET</button>
+                <button class="reset_button font_700" id="reset" type="submit">RESET</button>
             </div>
         </div>
         </div>
+        <script src="app.js"></script>
 
     
     
